@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  integration-tester:
+    build: .
+
+  api:
+    image: 'swaggerapi/petstore'
+    ports: 
+      - "8080:8080"
