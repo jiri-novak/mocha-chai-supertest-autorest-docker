@@ -18,7 +18,7 @@
         "copyfiles": "^2.1.0"
     },
     "scripts": {
-        "test": "mocha -r ts-node/register __tests__/**/*.ts",
-        "test2": "tsc && copyfiles features/**/*.feature dist/ && cucumber-js dist/features/"
+        "test": "mocha -r ts-node/register __tests/**/*.ts",
+        "test2": "tsc && copyfiles __features/**/*.feature dist/ && cucumber-js dist/__features/"
     }
 }
